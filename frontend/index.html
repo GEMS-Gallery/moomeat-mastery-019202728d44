@@ -12,8 +12,14 @@
     </header>
     <main>
         <div id="cow-container">
-            <img src="cow_outline.png" alt="Cow outline" id="cow-image" usemap="#cow-map">
-            <map name="cow-map" id="cow-map"></map>
+            <svg viewBox="0 0 500 300" id="cow-svg">
+                <path id="cow-outline" d="M50,150 Q75,80 150,70 Q200,65 250,80 Q300,65 350,70 Q425,80 450,150 Q460,200 430,250 Q350,290 250,290 Q150,290 70,250 Q40,200 50,150 Z" fill="none" stroke="black" stroke-width="2"/>
+                <path id="shoulder" d="M100,120 Q120,100 150,100" fill="none" stroke="transparent" stroke-width="20"/>
+                <path id="ribs" d="M200,90 Q225,85 250,90" fill="none" stroke="transparent" stroke-width="20"/>
+                <path id="back" d="M250,90 Q275,85 300,90" fill="none" stroke="transparent" stroke-width="20"/>
+                <path id="rear" d="M350,100 Q380,100 400,120" fill="none" stroke="transparent" stroke-width="20"/>
+                <path id="chest" d="M150,200 Q200,210 250,210 Q300,210 350,200" fill="none" stroke="transparent" stroke-width="20"/>
+            </svg>
         </div>
         <div id="meat-cuts-list"></div>
         <div id="cut-details"></div>

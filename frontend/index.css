@@ -24,7 +24,7 @@ main {
     width: 50%;
 }
 
-#cow-image {
+#cow-svg {
     width: 100%;
     height: auto;
 }
@@ -51,4 +51,9 @@ main {
 
 .cut-item:hover {
     background-color: #d0d0d0;
+}
+
+#cow-svg path:not(#cow-outline):hover {
+    stroke: red;
+    cursor: pointer;
 }
