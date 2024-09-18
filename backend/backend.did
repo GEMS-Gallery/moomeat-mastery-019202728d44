@@ -1,0 +1,10 @@
+type MeatCut = 
+ record {
+   description: text;
+   name: text;
+   position: text;
+ };
+service : {
+  getAllMeatCuts: () -> (vec MeatCut) query;
+  getMeatCutByName: (text) -> (opt MeatCut) query;
+}

@@ -1,0 +1,54 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+}
+
+main {
+    display: flex;
+    justify-content: space-around;
+    padding: 2rem;
+}
+
+#cow-container {
+    position: relative;
+    width: 50%;
+}
+
+#cow-image {
+    width: 100%;
+    height: auto;
+}
+
+#meat-cuts-list {
+    width: 20%;
+}
+
+#cut-details {
+    width: 30%;
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.cut-item {
+    cursor: pointer;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+    background-color: #e0e0e0;
+    border-radius: 3px;
+}
+
+.cut-item:hover {
+    background-color: #d0d0d0;
+}
