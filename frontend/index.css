@@ -20,13 +20,11 @@ main {
 }
 
 #cow-container {
-    position: relative;
     width: 50%;
 }
 
-#cow-image {
-    width: 100%;
-    height: auto;
+#cow-canvas {
+    border: 1px solid #ccc;
 }
 
 #meat-cuts-list {
@@ -51,12 +49,4 @@ main {
 
 .cut-item:hover {
     background-color: #d0d0d0;
-}
-
-area {
-    cursor: pointer;
-}
-
-area:hover {
-    outline: 2px solid red;
 }

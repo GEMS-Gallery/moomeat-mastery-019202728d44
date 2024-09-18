@@ -6,7 +6,7 @@ async function init() {
     try {
         meatCuts = await backend.getAllMeatCuts();
         displayMeatCutsList();
-        setupCowInteractions();
+        initializeCowDrawing(meatCuts);
     } catch (error) {
         console.error("Error fetching meat cuts:", error);
     }
@@ -23,19 +23,6 @@ function displayMeatCutsList() {
     });
 }
 
-function setupCowInteractions() {
-    const cowMap = document.getElementById('cow-map');
-    meatCuts.forEach(cut => {
-        const area = cowMap.querySelector(`#${cut.position}`);
-        if (area) {
-            area.onclick = (e) => {
-                e.preventDefault();
-                displayCutDetails(cut);
-            };
-        }
-    });
-}
-
 function displayCutDetails(cut) {
     const detailsContainer = document.getElementById('cut-details');
     detailsContainer.innerHTML = `
@@ -43,6 +30,7 @@ function displayCutDetails(cut) {
         <p>${cut.description}</p>
         <p>Position: ${cut.position}</p>
     `;
+    highlightCut(cut.position);
 }
 
 window.onload = init;

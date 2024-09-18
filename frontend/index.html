@@ -12,18 +12,12 @@
     </header>
     <main>
         <div id="cow-container">
-            <img src="cow_image.jpg" alt="Cow with meat cuts" usemap="#cow-map" id="cow-image">
-            <map name="cow-map" id="cow-map">
-                <area shape="poly" coords="50,50,100,30,150,50,100,100" alt="Chuck" id="chuck">
-                <area shape="poly" coords="151,50,200,30,250,50,200,100" alt="Rib" id="rib">
-                <area shape="poly" coords="251,50,300,30,350,50,300,100" alt="Loin" id="loin">
-                <area shape="poly" coords="351,50,400,30,450,50,400,100" alt="Round" id="round">
-                <area shape="poly" coords="100,101,200,120,300,101,200,150" alt="Brisket" id="brisket">
-            </map>
+            <canvas id="cow-canvas" width="500" height="300"></canvas>
         </div>
         <div id="meat-cuts-list"></div>
         <div id="cut-details"></div>
     </main>
     <script type="module" src="index.js"></script>
+    <script src="cowDrawing.js"></script>
 </body>
 </html>
