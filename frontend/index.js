@@ -24,11 +24,14 @@ function displayMeatCutsList() {
 }
 
 function setupCowInteractions() {
-    const cowSvg = document.getElementById('cow-svg');
+    const cowMap = document.getElementById('cow-map');
     meatCuts.forEach(cut => {
-        const element = cowSvg.getElementById(cut.position);
-        if (element) {
-            element.onclick = () => displayCutDetails(cut);
+        const area = cowMap.querySelector(`#${cut.position}`);
+        if (area) {
+            area.onclick = (e) => {
+                e.preventDefault();
+                displayCutDetails(cut);
+            };
         }
     });
 }

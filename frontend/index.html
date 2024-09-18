@@ -12,20 +12,14 @@
     </header>
     <main>
         <div id="cow-container">
-            <svg viewBox="0 0 500 300" id="cow-svg">
-                <path id="cow-outline" d="M50,150 C60,100 80,80 120,80 C140,80 160,90 180,100 C200,110 220,120 240,120 C260,120 280,110 300,100 C320,90 340,80 360,80 C400,80 420,100 430,150 C440,200 430,250 400,270 C370,290 330,300 250,300 C170,300 130,290 100,270 C70,250 60,200 70,150 Z" fill="none" stroke="black" stroke-width="2"/>
-                <path id="head" d="M50,150 C40,130 40,110 50,90 C60,70 80,60 100,70 C120,80 130,100 120,120 Z" fill="none" stroke="black" stroke-width="2"/>
-                <path id="tail" d="M430,150 C440,140 450,130 460,140 C470,150 480,170 470,190 C460,210 450,220 440,210 Z" fill="none" stroke="black" stroke-width="2"/>
-                <path id="leg1" d="M100,270 L90,290" stroke="black" stroke-width="2"/>
-                <path id="leg2" d="M150,280 L140,300" stroke="black" stroke-width="2"/>
-                <path id="leg3" d="M350,280 L360,300" stroke="black" stroke-width="2"/>
-                <path id="leg4" d="M400,270 L410,290" stroke="black" stroke-width="2"/>
-                <path id="chuck" d="M120,120 Q140,100 160,120" fill="none" stroke="transparent" stroke-width="20"/>
-                <path id="rib" d="M180,110 Q210,100 240,110" fill="none" stroke="transparent" stroke-width="20"/>
-                <path id="loin" d="M260,110 Q290,100 320,110" fill="none" stroke="transparent" stroke-width="20"/>
-                <path id="round" d="M340,120 Q360,100 380,120" fill="none" stroke="transparent" stroke-width="20"/>
-                <path id="brisket" d="M180,200 Q250,220 320,200" fill="none" stroke="transparent" stroke-width="20"/>
-            </svg>
+            <img src="cow_image.jpg" alt="Cow with meat cuts" usemap="#cow-map" id="cow-image">
+            <map name="cow-map" id="cow-map">
+                <area shape="poly" coords="50,50,100,30,150,50,100,100" alt="Chuck" id="chuck">
+                <area shape="poly" coords="151,50,200,30,250,50,200,100" alt="Rib" id="rib">
+                <area shape="poly" coords="251,50,300,30,350,50,300,100" alt="Loin" id="loin">
+                <area shape="poly" coords="351,50,400,30,450,50,400,100" alt="Round" id="round">
+                <area shape="poly" coords="100,101,200,120,300,101,200,150" alt="Brisket" id="brisket">
+            </map>
         </div>
         <div id="meat-cuts-list"></div>
         <div id="cut-details"></div>
