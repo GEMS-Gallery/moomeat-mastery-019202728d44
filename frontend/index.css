@@ -53,7 +53,7 @@ main {
     background-color: #d0d0d0;
 }
 
-#cow-svg path:not(#cow-outline):hover {
+#cow-svg path:not(#cow-outline):not(#head):not(#tail):not([id^="leg"]):hover {
     stroke: red;
     cursor: pointer;
 }
