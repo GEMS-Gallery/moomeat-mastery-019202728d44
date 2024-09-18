@@ -13,11 +13,11 @@ actor {
 
   // Store meat cuts information
   let meatCuts: [MeatCut] = [
-    { name = "Chuck"; description = "Tough but flavorful, good for slow cooking"; position = "shoulder" },
-    { name = "Rib"; description = "Tender and well-marbled, great for grilling"; position = "ribs" },
-    { name = "Loin"; description = "Lean and tender, ideal for steaks"; position = "back" },
-    { name = "Round"; description = "Lean and less tender, suitable for roasts"; position = "rear" },
-    { name = "Brisket"; description = "Tough but flavorful, perfect for smoking"; position = "chest" },
+    { name = "Chuck"; description = "Tough but flavorful, good for slow cooking"; position = "chuck" },
+    { name = "Rib"; description = "Tender and well-marbled, great for grilling"; position = "rib" },
+    { name = "Loin"; description = "Lean and tender, ideal for steaks"; position = "loin" },
+    { name = "Round"; description = "Lean and less tender, suitable for roasts"; position = "round" },
+    { name = "Brisket"; description = "Tough but flavorful, perfect for smoking"; position = "brisket" },
   ];
 
   // Query function to get all meat cuts
